@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html">
+            <img class="logo" src="#">
+        </a>
+        <nav class="main-navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item current"><a class="navigation-link">Каталог</a></li>
+                <li class="navigation-item"><a class="navigation-link">Доставка и оплата</a></li>
+                <li class="navigation-item"><a class="navigation-link">О компании</a></li>
+            </ul>
+            <address class="contact-phone">
+                <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+            </address>
+            <ul class="user-navigation">
+                <li class="user-navigation-list"><a class="user-navigation-link"><span
+                            class="visually-hidden">Поиск</span></a>
+                </li>
+                <li class="user-navigation-list"><a class="user-navigation-link">Вход</a></li>
+                <li class="user-navigation-list"><a class="user-navigation-link"><span
+                            class="visually-hidden">Корзина</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-catalog">
+        <h1 class="visually-hidden">Каталог</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link"href="index.html" >Главная</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link">Каталог</a></li>
+        </ul>
+        <h2 class="catalog-title">Сливочное мороженое</h2>
+        <section class="filter">
+            <form action="https://echo.htmlacademy.ru/" class="filter-form">
+                <p class="sorting">
+                    <label class="sorting-form" for="sorting-form-field">Сортировка:</label>
+                    <select id="sorting-form-field" name="sorting-form">
+                        <option>По популярности:</option>
+                    </select>
+                </p>
+                <p class="price">
+                    <label class="sorting-price" for="sorting-price-field">Цена: 100 ₽ – 500 ₽</label>
+                    <input type="range" name="sorting-price" id="sorting-price-field" min="100" max="500" step="1">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <ul class="social-link">
+            <li class="btn-social btn-telegram"><a href="#" class="social-link telegram"><span
+                        class="visually-hidden">Telegram</span></a></li>
+            <li class="btn-social vkontakte"><a href="#" class="social-link vkontakte"><span
+                        class="visually-hidden">Vkontakte</span></a></li>
+            <li class="btn-social youtube"><a href="#" class="social-link youtube"><span
+                        class="visually-hidden">Youtube</span></a></li>
+        </ul>
+        <ul class="footer-menu-list">
+            <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span class="footer-menu-like">Для
+                        поставщиков</span></a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Наши документы</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-menu-link">О производстве</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Экологические стандарты</a></li>
+        </ul>
+        <div class="developer">
+            <a href="htpps://htmlacademy.ru" class="developer-link">
+                <img class="developer-logo" src="#" alt="HTML Academy">
+            </a>
+            <p class="developer-text">Сделано в <a href="htpps://htmlacademy.ru" class="developer-link">.html academy</a> ©
+                2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>

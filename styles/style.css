@@ -49,7 +49,7 @@ body {
 .user-navigation,
 .btn-social,
 .gift-item,
-.popular-item,
+.product-item,
 .advantages-item,
 .footer-menu-item {
     list-style: none;
@@ -84,6 +84,11 @@ h3 {
     line-height: 46px;
 }
 
+.slider-text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .gift-title {
     font-size: 32px;
     font-weight: 900;
@@ -94,7 +99,11 @@ h3 {
 .btn-gift {
     color: #2D3440;
     line-height: 20px;
+    font-weight: 700;
     text-decoration: none;
+    text-align: center; 
+    background: #FCFCFC;
+    border-radius: 26px;
 }
 
 .gift-item {
@@ -124,10 +133,21 @@ h3 {
 
 }
 
+.add-to-cart-btn {
+    padding: 0;
+    background-color: #FF2F64;
+    border-radius: 50%;
+    border: 0;
+}
+
 .advantages {
     padding: 24px;
     background-image: url("../images/advantages-background.png");
     background-repeat: no-repeat;
+}
+
+.advantages-wrapper {
+    background-color: #FFFFFF;
 }
 
 .advantages-title {
@@ -140,6 +160,44 @@ h3 {
     background-image: url("../images/blog-background.jpg");
     background-repeat: no-repeat;
     border-radius: 16px;
+}
+
+.blog-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.blog-text {
+    line-height: 20px;
+}
+
+.subscription {
+    background-image: url("../images/subscription-background.png");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.subscription input {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.form-date::after {
+    content: url("../images/required.svg");
+}
+
+.form-adress::after {
+    content: url("../images/required.svg");
+}
+
+.btn-send, .btn-feedback {
+    background-color: #FF2F64;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 26px;
 }
 
 .delivery {
@@ -159,6 +217,17 @@ h3 {
     border-radius: 8px;
 }
 
+.delivery label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.delivery input {
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .contacts {
     background-image: url("../images/contacts-background.jpg");
     background-repeat: no-repeat;
@@ -166,12 +235,28 @@ h3 {
 }
 
 .contacts-adress {
+    font-style: normal;
     background-color: #FCFCFC;
     border-radius: 8px;
 }
 
-.advantages-wrapper {
-    background-color: #FFFFFF;
+.adress-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.adress-phone-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.adress-phone-caption {
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .product-price {
@@ -179,4 +264,33 @@ h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+}
+
+.footer-menu-list {
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+.footer-menu-list a {
+    text-decoration: none;
+    color: #565C66;
+}
+
+.footer-menu-like {
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.footer-menu-like::before {
+    content: url("../images/heart.svg");
+}
+
+.developer-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.developer-link {
+    color: #565C66;
 }

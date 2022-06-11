@@ -51,7 +51,9 @@ body {
 .gift-item,
 .product-item,
 .advantages-item,
-.footer-menu-item {
+.footer-menu-item,
+.breadcrumbs-item,
+.pagination-item {
     list-style: none;
 }
 
@@ -61,10 +63,18 @@ h3 {
     color: #2D3440;
 }
 
+.main-navigation {
+    line-height: 20px;
+}
+
 .navigation-link,
 .user-navigation-link,
 .phone-link {
     color: #2D3440;
+}
+
+.navigation-link {
+    line-height: 20px;
 }
 
 .phone-link {
@@ -75,7 +85,6 @@ h3 {
 
 .user-navigation-link {
     font-size: 14px;
-    background
 }
 
 .slider-title {
@@ -134,7 +143,6 @@ h3 {
 }
 
 .add-to-cart-btn {
-    padding: 0;
     background-color: #FF2F64;
     border-radius: 50%;
     border: 0;
@@ -293,4 +301,65 @@ h3 {
 
 .developer-link {
     color: #565C66;
+}
+
+/* Catalog*/
+
+.catalog-title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 46px;
+    text-align: center;
+}
+
+.current .navigation-link {
+    padding: 8px 16px;
+    background-color: #FF4A78;
+    color: #FCFCFC;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-decoration: none;
+}
+.breadcrumbs-link-main::after {
+    content: url("../images/chevrons-right.svg");
+}
+
+.filter {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-apply {
+    font-weight: 700;
+    background-color: #FFCBD8;
+}
+
+.btn-show-more {
+    padding: 12px 32px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: #FCFCFC;
+    border: 4px solid #FFCBD8;
+
+border-radius: 26px;
+}
+
+.pagination-link {
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+.pagination-current {
+    padding: 2px 8px;
+    background-color: #FCFCFC;
+    border-radius: 76px;
+    text-align: center;
 }

@@ -22,9 +22,16 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -64,7 +71,25 @@ h3 {
 }
 
 .main-navigation {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
     line-height: 20px;
+}
+
+.logo {
+    margin-right: 16px;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+
+.user-menu-container {
+    max-width: 431px;
+    margin-left: auto;
 }
 
 .navigation-link,
@@ -87,6 +112,26 @@ h3 {
     font-size: 14px;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-description {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .slider-title {
     font-weight: 900;
     font-size: 36px;
@@ -104,6 +149,15 @@ h3 {
     line-height: 46px;
     text-align: center;
 }
+
+.gift-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .btn-order,
 .btn-gift {
     color: #2D3440;
@@ -116,13 +170,37 @@ h3 {
 }
 
 .gift-item {
+    display: flex;
+    flex-direction: row;
+    width: 570px;
     background-color: #FF7799;
+}
+
+.gift-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.free-offer,
+.gift-text,
+.btn-gift {
+    margin-left:36px;
+}
+
+.product-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .product-title {
     font-size: 32px;
     font-weight: 900;
     line-height: 46px;
+    text-align: center;
 }
 
 .product-name {
@@ -133,10 +211,19 @@ h3 {
 }
 
 .product-item {
+    width: 270px;
     background-color: #FCFCFC;
     border-radius: 8px;
 }
 
+.product-item::last-child {
+    margin-right: 0;
+}
+
+.product-img {
+    display: block;
+    margin: 0 auto;
+}
 .product-text {
     text-align: center;
 
@@ -149,19 +236,36 @@ h3 {
 }
 
 .advantages {
-    padding: 24px;
+    padding: 0;
+    margin: 0;
     background-image: url("../images/advantages-background.png");
     background-repeat: no-repeat;
 }
 
 .advantages-wrapper {
     background-color: #FFFFFF;
+    padding: 0;
+    margin: 24px;
+    border-radius:16px;
 }
 
 .advantages-title {
     font-size: 32px;
     font-weight: 900;
     line-height: 46px;
+}
+
+.advantages-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.advantages-item::before {
+    content: url("../images/advantages/cow.svg");
 }
 
 .blog {

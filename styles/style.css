@@ -160,13 +160,15 @@ h3 {
 
 .btn-order,
 .btn-gift {
+    padding: 12px 32px;
     color: #2D3440;
     line-height: 20px;
     font-weight: 700;
     text-decoration: none;
     text-align: center; 
-    background: #FCFCFC;
+    background-color: #FCFCFC;
     border-radius: 26px;
+    border: 4px solid #FFCBD8;
 }
 
 .gift-item {
@@ -174,6 +176,7 @@ h3 {
     flex-direction: row;
     width: 570px;
     background-color: #FF7799;
+    border-radius: 16px;
 }
 
 .gift-container {
@@ -266,6 +269,10 @@ h3 {
 
 .advantages-item::before {
     content: url("../images/advantages/cow.svg");
+}
+
+.advantages-text {
+    width: 50%;
 }
 
 .blog {

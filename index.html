@@ -79,30 +79,30 @@
         <h2 class="product-title">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
         <ul class="product-list">
           <li class="product-item">
-            <img class="product-img" src="images/products/product-1.png" width="168" height="168" alt="Малинка.">
             <h3 class="product-name">Малинка</h3>
             <p class="product-text">Сливочное мороженое с малиновым джемом</p>
+            <img class="product-img" src="images/products/product-1.png" width="168" height="168" alt="Малинка.">
             <span class="product-price">310 ₽/кг</span>
             <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
           </li>
           <li class="product-item">
-            <img class="product-img" src="images/products/product-2.png" width="168" height="168" alt="Фисташка.">
             <h3 class="product-name">Фисташка</h3>
             <p class="product-text">Фисташковый пломбир с кусочками шоколада</p>
+            <img class="product-img" src="images/products/product-2.png" width="168" height="168" alt="Фисташка.">
             <span class="product-price">340 ₽/кг</span>
             <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
           </li>
           <li class="product-item">
-            <img class="product-img" src="images/products/product-3.png" width="168" height="168" alt="Черника.">
             <h3 class="product-name">Черника</h3>
             <p class="product-text">Крем-брюле с черничным джемом</p>
+            <img class="product-img" src="images/products/product-3.png" width="168" height="168" alt="Черника.">
             <span class="product-price">330 ₽/кг</span>
             <button class="btn btn-product add-to-card-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
           </li>
           <li class="product-item">
-            <img class="product-img" src="images/products/product-4.png" width="168" height="168" alt="Бабл-гам.">
             <h3 class="product-name">Бабл-гам</h3>
             <p class="product-text">Ванильный пломбир со сладкой посыпкой</p>
+            <img class="product-img" src="images/products/product-4.png" width="168" height="168" alt="Бабл-гам.">
             <span class="product-price">320 ₽/кг</span>
             <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
           </li>
@@ -131,22 +131,27 @@
           </ul>
         </div>
       </section>
-      <article class="blog">
-        <h2 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h2>
-        <p class="blog-text">Новое в нашем блоге</p>
-      </article>
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
-          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-          Честно =)</p>
-        <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
-        <button class="btn btn-send">Отправить</button>
-      </section>
+      <div class="union-container">
+        <article class="blog">
+          <h2 class="blog-title">10 способов сервировки<br>фруктовых щербетов<br>к столу</h2>
+          <p class="blog-text">Новое в нашем блоге</p>
+        </article>
+        <section class="subscription">
+          <div class="subscription-wrapper">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+              Честно =)</p>
+            <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
+            <button class="btn btn-send">Отправить</button>
+          </div>
+        </section>
+      </div>
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
-          доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="delivery-wrapper">
+          <h2 class="delivery-title">Доставка любимого<br>мороженого на дом</h2>
+          <p class="delivery-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите<br>доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru/">
           <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <p class="delivery-form-date">
@@ -178,7 +183,7 @@
     </div>      
   </main>
   <footer class="main-footer">
-    <ul class="social-link">
+    <ul class="social-link-list">
       <li class="btn-social btn-telegram"><a href="#" class="social-link telegram"><span
             class="visually-hidden">Telegram</span></a></li>
       <li class="btn-social vkontakte"><a href="#" class="social-link vkontakte"><span

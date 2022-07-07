@@ -11,7 +11,7 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a href="#">
+      <a class="logo-link" href="#">
         <img class="logo" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси.">
       </a>
       <ul class="navigation-list">
@@ -23,8 +23,9 @@
         <address class="contact-phone">
           <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
-        <ul class="user-navigation">
-          <li class="user-navigation-item"><a class="user-navigation-link"><span class="visually-hidden">Поиск</span></a>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item"><a class="user-navigation-link"><span
+                class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-navigation-item"><a class="user-navigation-link">Вход</a></li>
           <li class="user-navigation-item"><a class="user-navigation-link"><span
@@ -37,13 +38,17 @@
     <div class="page-container">
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
-        <div class="slider-description">
-          <h2 class="slider-title">Нежный пломбир<br>с клубничным джемом</h2>
-          <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом<br>– это идеальный десерт для всей семьи.</p>
-          <a href="#" class="btn btn-order">Заказать</a>
+        <div class="slider-wrapper">
+          <div class="slider-description">
+            <h2 class="slider-title">Нежный пломбир<br>с клубничным джемом</h2>
+            <p class="slider-text">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным
+              джемом<br>– это
+              идеальный десерт для всей семьи.</p>
+            <a href="#" class="btn btn-order">Заказать</a>
+          </div>
+          <img class="slider-ice-cream" src="images/strawberry-ice-cream.png" width="306" height="507">
         </div>
-        <img class="slider-ice-cream" src="images/strawberry-ice-cream.png" width="306" height="507">
-        <ul class="social-link">
+        <ul class="social-link-list">
           <li class="btn-social btn-telegram"><a href="#" class="social-link telegram"><span
                 class="visually-hidden">Telegram</span></a></li>
           <li class="btn-social vkontakte"><a href="#" class="social-link vkontakte"><span
@@ -82,29 +87,45 @@
             <h3 class="product-name">Малинка</h3>
             <p class="product-text">Сливочное мороженое с малиновым джемом</p>
             <img class="product-img" src="images/products/product-1.png" width="168" height="168" alt="Малинка.">
-            <span class="product-price">310 ₽/кг</span>
-            <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
+            <div class="price-container">
+              <span class="product-price">310 ₽/кг</span>
+              <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в
+                  корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32"
+                  height="32"></button>
+            </div>
           </li>
           <li class="product-item">
             <h3 class="product-name">Фисташка</h3>
             <p class="product-text">Фисташковый пломбир с кусочками шоколада</p>
             <img class="product-img" src="images/products/product-2.png" width="168" height="168" alt="Фисташка.">
-            <span class="product-price">340 ₽/кг</span>
-            <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
+            <div class="price-container">
+              <span class="product-price">340 ₽/кг</span>
+              <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в
+                  корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32"
+                  height="32"></button>
+            </div>
           </li>
           <li class="product-item">
             <h3 class="product-name">Черника</h3>
             <p class="product-text">Крем-брюле с черничным джемом</p>
             <img class="product-img" src="images/products/product-3.png" width="168" height="168" alt="Черника.">
-            <span class="product-price">330 ₽/кг</span>
-            <button class="btn btn-product add-to-card-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
+            <div class="price-container">
+              <span class="product-price">330 ₽/кг</span>
+              <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в
+                  корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32"
+                  height="32"></button>
+            </div>
           </li>
           <li class="product-item">
             <h3 class="product-name">Бабл-гам</h3>
             <p class="product-text">Ванильный пломбир со сладкой посыпкой</p>
             <img class="product-img" src="images/products/product-4.png" width="168" height="168" alt="Бабл-гам.">
-            <span class="product-price">320 ₽/кг</span>
-            <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32" height="32"></button>
+            <div class="price-container">
+              <span class="product-price">320 ₽/кг</span>
+              <button class="btn btn-product add-to-cart-btn"><span class="visually-hidden">Добавить в
+                  корзину</span><img class="add-to-cart-img" src="images/product-cart.svg" width="32"
+                  height="32"></button>
+            </div>
           </li>
         </ul>
       </section>
@@ -114,18 +135,22 @@
             производства на развес</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
-              <p class="advantages-text advantages-text-1">Всё наше мороженое изготавливается на собственном производстве с использованием
+              <p class="advantages-text advantages-text-1">Всё наше мороженое изготавливается на собственном
+                производстве с использованием
                 современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-text advantages-text-2">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</p>
+              <p class="advantages-text advantages-text-2">Закупка ингредиентов производится только у проверенных
+                фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-text advantages-text-3">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все
+              <p class="advantages-text advantages-text-3">Для приготовления мороженого используются сливки и молоко
+                высочайшего качества. Все
                 ингредиенты и добавки произведены из натурального сырья.</p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-text advantages-text-4">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт
+              <p class="advantages-text advantages-text-4">Доставка нашего мороженого осуществляется в специальном
+                термопаке, который не даёт
                 мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
@@ -150,10 +175,12 @@
       <section class="delivery">
         <div class="delivery-wrapper">
           <h2 class="delivery-title">Доставка любимого<br>мороженого на дом</h2>
-          <p class="delivery-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите<br>доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
+          <p class="delivery-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин?
+            Закажите<br>доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
         </div>
         <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru/">
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          </p>
           <p class="delivery-form-date">
             <label class="form-date" for="delivery-date">Дата</label>
             <input type="date" id="delivery-date" placeholder="01.04.2020">
@@ -172,15 +199,15 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <address class="contacts-adress">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <p class="adress-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <p>Для заказов по телефону:</p>
+          <p class="adress-office">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="adress-street">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="adress-order">Для заказов по телефону:</p>
           <a class="adress-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <span class="adress-phone-caption">(с 10 до 20 ежедневно)</span>
           <button class="btn btn-feedback">Форма обратной связи</button>
         </address>
       </section>
-    </div>      
+    </div>
   </main>
   <footer class="main-footer">
     <ul class="social-link-list">

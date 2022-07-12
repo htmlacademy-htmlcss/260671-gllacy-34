@@ -404,11 +404,14 @@ h3 {
 }
 
 .advantages-text {
+    display: block;
     margin: 0;
 }
 
 .advantages-text-1::before {
     content: url("../images/advantages/icecream.svg");
+
+    display: block;
 
     width: 48px;
     height: 48px;
@@ -421,6 +424,8 @@ h3 {
 .advantages-text-2::before {
     content: url("../images/advantages/cow.svg");
 
+    display: block;
+
     width: 48px;
     height: 48px;
     margin-right: 16px;
@@ -432,6 +437,8 @@ h3 {
 .advantages-text-3::before {
     content: url("../images/advantages/leaf.svg");
 
+    display: block;
+
     width: 48px;
     height: 48px;
     margin-right: 16px;
@@ -442,6 +449,8 @@ h3 {
 
 .advantages-text-4::before {
     content: url("../images/advantages/thermometer.svg");
+
+    display: block;
 
     width: 48px;
     height: 48px;
@@ -564,7 +573,9 @@ h3 {
 .delivery-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 500px;
     margin-top: 64px;
     margin-bottom: 64px;
     margin-right: 64px;
@@ -574,29 +585,39 @@ h3 {
 }
 
 .delivery-form-text {
+    width: 420px;
     margin: 0;
+    margin-bottom: 32px;
 }
 
 .delivery-form-container {
     display: grid;
     grid-template-columns: 117px 287px;
     gap: 20px 16px;
+    margin-bottom: 32px;
+}
+
+.delivery-form-container label {
+    margin-bottom: 8px;
 }
 
 .delivery-form-date {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .delivery-form-phone {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .delivery-form-adress {
     display: flex;
     flex-direction: column;
     grid-column: 1 / -1;
+    margin: 0;
 }
 
 
@@ -624,8 +645,7 @@ h3 {
 }
 
 .btn-send {
-    grid-column: 1 / -1;
-    justify-self: center;
+    align-self: center;
 }
 
 .form-date {
@@ -798,17 +818,39 @@ h3 {
     margin-bottom: 95px;
 }
 
+.filter p {
+    margin: 0;
+}
+
 .filter-form {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-form > div {
+    margin-right: 24px;
+}
+
+.filter-form > div:last-of-type {
+    margin-right: 16px;
 }
 
 .sorting {
     grid-area: 1 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .price {
     grid-area: 3 / 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.fat {
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-fat-container {
@@ -840,9 +882,12 @@ border-radius: 26px;
 
 .pagination-list {
     display: flex;
+    margin: 0;
+    align-items: center;
 }
 
 .pagination-link {
+    padding: 12px;
     line-height: 20px;
     color: #2D3440;
     text-decoration: none;

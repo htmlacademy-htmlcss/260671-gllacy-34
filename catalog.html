@@ -44,18 +44,19 @@
             <h2 class="catalog-title">Сливочное мороженое</h2>
             <section class="filter">
                 <form action="https://echo.htmlacademy.ru/" class="filter-form">
-                    <p class="sorting">
+                    <div class="sorting">
                         <label class="sorting-form" for="sorting-form-field">Сортировка:</label>
                         <select id="sorting-form-field" name="sorting-form">
                             <option>По популярности:</option>
                         </select>
-                    </p>
-                    <p class="price">
+                    </div>
+                    <div class="price">
                         <label class="price-form" for="price-form-field">Цена: 100 ₽ – 500 ₽</label>
                         <input type="range" name="price-form" id="price-form-field" min="100" max="500" step="1">
-                    </p>
-                    <p class="fat">
+                    </div>
+                    <div class="fat">
                         <p class="filter-fat-text">Жирность:</p>
+                        <p class="filter-fat-container">
                             <label class="filter-fat" for="fat-form-field-0">
                             <input type="radio" name="fat-form" id="fat-form-field-0" value="0"> 0%
                             </label>
@@ -68,8 +69,9 @@
                             <label class="filter-fat" for="fat-form-field-30">
                             <input type="radio" name="fat-form" id="fat-form-field-30" value="30"> выше 30%
                             </label>
-                    </p>
-                    <p class="filler">
+                        </p>
+                    </div>
+                    <div class="filler">
                         <p class="filter-filler-text">Наполнители:</p>
                             <label class="filter-filler" for="filter-filler-field">
                             <input type="checkbox" name="filler-form" id="filter-filler-field-chokolate" value="chokolate"
@@ -88,7 +90,7 @@
                             <label class="filter-filler" for="filter-filler-field">
                             <input type="checkbox" name="filler-form" id="filter-filler-field-jam" value="jam">джемы
                         </label>
-                    </p>
+                    </div>
                     <button class="btn btn-apply" type="submit">Приенить</button>
                 </form>
             </section>
@@ -248,7 +250,7 @@
             </section>
             <section class="pagination">
                 <button class="btn btn-show-more" type="button">Показать ещё</button>
-                <ul class="pagination">
+                <ul class="pagination-list">
                     <li class="pagination-item">
                         <a class="pagination-link pagination-previously pagination-disabled"><span
                                 class="visually-hidden">Предыдущая страница</span></a>

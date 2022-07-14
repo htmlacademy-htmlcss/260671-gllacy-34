@@ -949,8 +949,24 @@ body {
     font-weight: 700;
     background-color: #FCFCFC;
     border: 4px solid #FFCBD8;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    justify-self: center;
+}
 
-border-radius: 26px;
+.btn-show-more:hover {
+    background-color: #FFCBD8;
+    border: 4px solid #FCFCFC;
+}
+
+.btn-show-more:active {
+    background-color: #FCFCFC;
+    border: 2px solid #2D3440;
+}
+
+.btn-show-more:focus {
+    background-color: #FFCBD8;
+    border: 2px solid #2D3440
 }
 
 .pagination-list {
@@ -970,8 +986,4 @@ border-radius: 26px;
     background-color: #FCFCFC;
     border-radius: 76px;
     text-align: center;
-}
-
-.btn-show-more {
-    justify-self: center;
 }

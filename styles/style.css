@@ -112,6 +112,7 @@ body {
 .user-menu-container {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .user-navigation-list {
@@ -127,10 +128,10 @@ body {
     color: #2D3440;
 }
 
-
 .phone-link {
     display: block;
     margin: 0;
+    padding: 6px 0;
     margin-right: 16px;
     font-weight: 700;
     text-decoration: none;
@@ -140,6 +141,8 @@ body {
 .user-navigation-item {
     margin: 0;
     margin-right: 16px;
+    min-width: 32px;
+    min-height: 32px;
 }
 
 .user-navigation-item:last-child {
@@ -149,8 +152,6 @@ body {
 .user-navigation-link {
     position: relative;
     display: block;
-    min-width: 32px;
-    min-height: 32px;
     font-size: 14px;
     background-color: #FFCBD8;
     border-radius: 27px;
@@ -158,6 +159,7 @@ body {
 }
 
 .navigation-icon {
+    display: block  ;
     position: absolute;
     top: 0;
     right: 0;
@@ -165,6 +167,16 @@ body {
     left: 0;
     margin: auto;
     fill: #2D3440;
+}
+
+.user-navigation-link-search {
+    min-height: 32px;
+    min-height: 32px;
+    padding: 0 8px;
+}
+
+.user-navigation-link-search .navigation-icon {
+    
 }
 
 .user-navigation-link-login {
@@ -179,6 +191,7 @@ body {
 }
 
 .user-navigation-link-cart {
+    padding: 6px 16px;
     padding-left: 38px;
 }
 
@@ -238,6 +251,12 @@ body {
     color: #2D3440;
 }
 
+.slider-ice-cream {
+    margin-top: 21px;
+    margin-left: 21px;
+    margin-bottom: 2px;
+}
+
 .btn-order {
     align-self: flex-start;
 }
@@ -246,14 +265,33 @@ body {
     display: flex;
     justify-content: flex-end;
     margin: 0;
+    margin-left: auto;
     padding: 0;
     list-style-type: none;
+}
+
+.social-link {
+    display: block;
+    position: relative;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.social-icon {
+    display: block  ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #FCFCFC;
 }
 
 /* Gift section */
 
 .gift {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .gift-title {
@@ -286,26 +324,29 @@ body {
     background-clip: padding-box;
     background-color: #FCFCFC;
     border-radius: 26px;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    outline: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .btn-order:hover,
 .btn-gift:hover {
     background-color: #FFCBD8;
-    box-shadow: 0 0 0 4px  #FCFCFC;
+    outline: 4px solid #FCFCFC;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .btn-order:active,
 .btn-gift:active {
     background-color: #FCFCFC;
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .btn-order:focus,
 .btn-gift:focus {
     background-color: #FFCBD8;
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 
@@ -329,12 +370,19 @@ body {
 .free-offer {
     margin: 0;
     margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
     color: #2D3440;
 }
 
 .gift-text {
     margin: 0;
     margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #2D3440;
 }
 
 .img-gift {
@@ -465,14 +513,19 @@ body {
 }
 
 .advantages-text {
+    position: relative;
     display: block;
     margin: 0;
+    padding-left: 64px;
 }
 
 .advantages-text-1::before {
     content: url("../images/advantages/icecream.svg");
 
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     width: 48px;
     height: 48px;
@@ -486,6 +539,9 @@ body {
     content: url("../images/advantages/cow.svg");
 
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     width: 48px;
     height: 48px;
@@ -499,6 +555,9 @@ body {
     content: url("../images/advantages/leaf.svg");
 
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     width: 48px;
     height: 48px;
@@ -512,6 +571,9 @@ body {
     content: url("../images/advantages/thermometer.svg");
 
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     width: 48px;
     height: 48px;
@@ -942,7 +1004,9 @@ body {
 }
 
 .btn-show-more {
-    margin: 0 auto;
+    box-sizing: content-box;
+    margin-left: 488px;
+    margin-right: auto;
     padding: 12px 32px;
     font-size: 16px;
     line-height: 20px;
